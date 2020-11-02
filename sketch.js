@@ -10,6 +10,7 @@ var boyImage, boy;
 var treeImage, tree1, tree2;
 var mango1, mango2, mango3;
 var chain1;
+var ground1;
 
 function preload()
 {
@@ -38,6 +39,8 @@ function setup() {
 
 	tree2=new tree(100, 400, 30, 60);
 
+	ground1=new ground (750, 650, 1500, 20);
+
 
 	Engine.run(engine);
   
@@ -56,6 +59,7 @@ function draw() {
   background(400, 400, 400);
   drawSprites();
   
+  ground1.display();
   mango1.display();
   mango2.display();
   mango3.display();
